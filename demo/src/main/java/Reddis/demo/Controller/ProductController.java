@@ -17,6 +17,7 @@ public class ProductController {
     @Autowired
     ProductRepository productRepository;
 
+
     @PostMapping
     public Product save(@RequestBody Product product) {
         return productRepository.save(product);
